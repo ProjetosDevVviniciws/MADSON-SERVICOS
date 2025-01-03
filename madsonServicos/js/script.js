@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define a URL correta com base no dispositivo (móvel ou desktop)
   const baseURL = isMobile
-    ? "http://192.168.18.8:5500/madsonServicos/navegation/index.html" // URL para dispositivos móveis
-    : "http://127.0.0.1:5500/madsonServicos/navegation/index.html"; // URL para desktop
+    ? "http://192.168.18.8:5500/madsonServicos/index.html" // URL para dispositivos móveis
+    : "http://127.0.0.1:5500/madsonServicos/index.html"; // URL para desktop
 
   // VALIDAÇÃO DO FORMULÁRIO DE CONTATO
   const enviarButtonContato = document.querySelector("#contact-form .button");
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // DEFINE O ENDEREÇO DE REDIRECIONAMENTO BASEADO NO DISPOSITIVO
         const baseURL = isMobile
-          ? "http://192.168.18.8:5500/madsonServicos/navegation/index.html" // URL para dispositivos móveis
-          : "http://127.0.0.1:5500/madsonServicos/navegation/index.html"; // URL para desktop
+          ? "http://192.168.18.8:5500/madsonServicos/index.html" // URL para dispositivos móveis
+          : "http://127.0.0.1:5500/madsonServicos/index.html"; // URL para desktop
 
         // REDIRECIONA PARA A PÁGINA INICIAL
         window.location.href = baseURL;

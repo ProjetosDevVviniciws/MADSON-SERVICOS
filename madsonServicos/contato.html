@@ -7,37 +7,41 @@
     <meta name="author" content="Vinícius Pinto Gonçalves">
     <meta name="keywords" content="manutenção residencial, marido de aluguel, faz tudo, serviços de manutenção, reparos, reformas">
     <title>MadsonServiços</title>
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" href="../assets/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../madsonServicos/css/contato.css">
+    <link rel="icon" href="../madsonServicos/assets/images/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="logo">🛠️ MadsonServiços 🏠
         <h6>Pequenos Consertos, Grandes Resultados</h6>
     </div>
     <main>
-        <h1>Seja bem Vindo(a), coloque suas informações abaixo, por favor!</h1>        
+        <h1> Você gostaria de entrar em contato conosco ?</h1>
+        <h2> Envie sua mensagem pelo formulário abaixo para tirarmos todas as suas dúvidas. </h2>
         <div class="form-container">
-            <section id="login">
-                <div class="login">
-                    <h2>Login</h2>
-                    <form action="#" method="post">
+            <section id="contatar">
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <form action="#" method="post" novalidate>
                         <label for="email">E-mail</label>
                         <input type="text" placeholder="E-mail" id="email" name="email" required>
                         <span class="error-message">Este campo é obrigatório</span>
                         <p>É necessário um endereço de e-mail válido.</p>
 
-                        <label for="password">Senha</label>
-                        <input type="text" placeholder="Senha" id="password" name="password" required>
+                        <label for="username">Usuário</label>
+                        <input type="text" placeholder="Usuário" id="username" name="username" required>
                         <span class="error-message">Este campo é obrigatório</span>
-                        <p>É necessária uma senha válida.</p>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem aqui"></textarea>
+                        <span class="error-message">Este campo é obrigatório</span>
                     </form>
                 </div>
             </section>
         </div> <!-- Fim do form-container -->
 
         <!-- Botões -->
-        <div id="login-form">
-            <button class="button">Entrar</button>
+        <div id="contact-form">
+            <button class="button">Enviar</button>
             <a href="./index.html" class="button">Voltar</a>
         </div>
     </main>
@@ -45,15 +49,12 @@
         &copy; 2024 MadsonServiços. Todos os direitos reservados.
     </footer>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- jQuery -->
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- Axios -->
-    <script src="../node_modules/axios/dist/axios.min.js"></script>
-    <script src="../js/script.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../madsonServicos/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- jQuery -->
+        <script src="../madsonServicos/node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Axios -->
+        <script src="../madsonServicos/node_modules/axios/dist/axios.min.js"></script>
+        <script src="../madsonServicos/js/script.js"></script>
 </body>
 </html>
-
-
-

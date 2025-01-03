@@ -8682,7 +8682,7 @@ footer {
         background-color: #0a0a7f;
         color: #fff;
         border: none;
-        padding: 12px 18px; /* Padding levemente aumentado */
+        padding: 16px 22px; /* Padding levemente aumentado */
         border-radius: 3px;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -13262,6 +13262,15 @@ footer {
         text-align: center;
         margin: 8px 0; /* Mantida a margem */
         margin-top: 45px;
+    }
+
+    main h2 {
+        font-family: 'Lucida Sans', sans-serif;
+        font-size: 18px; /* Mantido o tamanho da fonte */
+        color: black;
+        text-align: center;
+        margin: 8px 0; /* Mantida a margem */
+        margin-top: 45px;
         margin-bottom: 45px;
     }
 
@@ -13276,7 +13285,7 @@ footer {
         padding: 16px; /* Mantido o padding */
     }
 
-    div h2 {
+    div h3 {
         color: black;
         font-size: 33px; /* Mantido o tamanho da fonte */
         margin: auto;
@@ -13289,7 +13298,7 @@ footer {
         width: 100%;
     }
 
-    #cadastrar {
+    #contatar {
         padding: 16px; /* Mantido o padding */
         background-color: #33333331;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.1); /* Mantida a sombra */
@@ -13326,13 +13335,24 @@ footer {
         border-radius: 3px;
     }
 
+    form textarea[id="mensagem"] {
+        width: 100%;
+        padding: 20px; /* Mantido o padding */
+        margin-top: 6px; /* Mantida a margem superior */
+        margin-bottom: 8px; /* Mantida a margem inferior */
+        border: 2px solid #ccc;
+        font-size: 19px; /* Mantido o tamanho da fonte */
+        height: 220px; /* Mantida a altura */
+        border-radius: 3px;
+    }
+
     p {
         font-size: 17px; /* Mantido o tamanho da fonte */
     }
 
     /* BOTÕES */
 
-    #register-form {
+    #contact-form {
         display: flex;
         font-size: 15px; /* Mantido o tamanho da fonte */
         text-align: center;
@@ -13372,13 +13392,15 @@ footer {
         border-radius: 5px;
     }
 
-    /* ESTILOS PARA A VALIDAÇÃO */
+    /* ESTILOS PARA AS VALIDAÇÕES */
     
-    input:invalid {
+    input:invalid,
+    textarea:invalid {
         border: 1px solid red;
     }
 
-    input:focus {
+    input:focus,
+    textarea:focus {
         outline: 1px solid red;
     }
 
@@ -13389,7 +13411,8 @@ footer {
         display: block; /* Garante que seja tratado como bloco */
     }
 
-    input:invalid + .error-message {
+    input:invalid + .error-message,
+    textarea:invalid + .error-message {
         display: block;
     }
 
@@ -15033,7 +15056,7 @@ footer {
         padding: 20px;
         background-color: #33333331;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        border-radius: 6px;
         margin-top: 50px;
         width: 600px; /* Largura mínima para cada formulário */
     }
@@ -15086,11 +15109,12 @@ footer {
     }
 
     .button {
+        font-size: 18px;
         background-color: #0a0a7f; /* Cor do botão */
         color: #fff; /* Cor do texto do botão */
         border: none;
         text-decoration: none;
-        padding: 15px 30px; /* Espaçamento interno do botão */
+        padding: 20px 30px; /* Espaçamento interno do botão */
         border-radius: 5px; /* Bordas arredondadas */
         cursor: pointer; /* Muda o cursor para pointer */
         transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
@@ -15224,7 +15248,7 @@ footer {
         padding: 20px;
         background-color: #33333331;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        border-radius: 6px;
         margin-top: 50px;
         width: 600px;
     }
@@ -15277,11 +15301,12 @@ footer {
     }
 
     .button {
+        font-size: 18px;
         background-color: #0a0a7f; /* Cor do botão */
         color: #fff; /* Cor do texto do botão */
         border: none;
         text-decoration: none;
-        padding: 15px 30px; /* Espaçamento interno do botão */
+        padding: 20px 30px; /* Espaçamento interno do botão */
         border-radius: 5px; /* Bordas arredondadas */
         cursor: pointer; /* Muda o cursor para pointer */
         transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
@@ -15505,13 +15530,15 @@ footer {
         border-radius: 8px; /* Bordas arredondadas */
     }
 
-    /* ESTILOS PARA A VALIDAÇÃO */
+    /* ESTILOS PARA AS VALIDAÇÕES */
 
-    input:invalid {
+    input:invalid,
+    textarea:invalid {
         border: 2px solid red; /* Borda vermelha para campos não preenchidos */
     }
 
-    input:focus {
+    input:focus,
+    textarea:focus {
         outline: 2px solid red; /* Borda vermelha ao focar no campo */
     }
 
@@ -15522,7 +15549,8 @@ footer {
         display: block; /* Garante que seja tratado como bloco */
     }
 
-    input:invalid + .error-message {
+    input:invalid + .error-message,
+    textarea:invalid + .error-message {
         display: block; /* Mostrar mensagem de erro */
     }
 

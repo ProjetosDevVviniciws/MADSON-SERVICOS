@@ -7831,7 +7831,7 @@ footer {
         background-color: #0a0a7f;
         color: #fff;
         border: none;
-        padding: 12px 18px; /* Padding levemente aumentado */
+        padding: 16px 22px; /* Padding levemente aumentado */
         border-radius: 3px;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -13616,7 +13616,7 @@ footer {
         padding: 20px;
         background-color: #33333331;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        border-radius: 6px;
         margin-top: 50px;
         min-width: 200px; /* Largura mínima para cada formulário */
     }
@@ -13661,11 +13661,12 @@ footer {
     }
 
     .button {
+        font-size: 18px;
         background-color: #0a0a7f; /* Cor do botão */
         color: #fff; /* Cor do texto do botão */
         border: none;
         text-decoration: none;
-        padding: 15px 30px; /* Espaçamento interno do botão */
+        padding: 20px 30px; /* Espaçamento interno do botão */
         border-radius: 5px; /* Bordas arredondadas */
         cursor: pointer; /* Muda o cursor para pointer */
         transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
@@ -13791,7 +13792,7 @@ footer {
         padding: 20px;
         background-color: #33333331;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        border-radius: 6px;
         margin-top: 50px;
         min-width: 200px; /* Largura mínima para cada formulário */
     }
@@ -13836,11 +13837,12 @@ footer {
     }
 
     .button {
+        font-size: 18px;
         background-color: #0a0a7f; /* Cor do botão */
         color: #fff; /* Cor do texto do botão */
         border: none;
         text-decoration: none;
-        padding: 15px 30px; /* Espaçamento interno do botão */
+        padding: 20px 30px; /* Espaçamento interno do botão */
         border-radius: 5px; /* Bordas arredondadas */
         cursor: pointer; /* Muda o cursor para pointer */
         transition: background-color 0.3s ease; /* Transição suave na mudança de cor */

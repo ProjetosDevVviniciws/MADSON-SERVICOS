@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define a URL correta com base no dispositivo (móvel ou desktop)
   const baseURL = isMobile
-    ? "http://192.168.18.8:5500/madsonServicos/index.html" // URL para dispositivos móveis
-    : "http://127.0.0.1:5500/madsonServicos/index.html"; // URL para desktop
+    ? "http://192.168.18.8:5500/index.html" // URL para dispositivos móveis
+    : "http://127.0.0.1:5500/index.html"; // URL para desktop
 
   // VALIDAÇÃO DO FORMULÁRIO DE CONTATO
   const enviarButtonContato = document.querySelector("#contact-form .button");
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // DEFINE O ENDEREÇO DE REDIRECIONAMENTO BASEADO NO DISPOSITIVO
         const baseURL = isMobile
-          ? "http://192.168.18.8:5500/madsonServicos/index.html" // URL para dispositivos móveis
-          : "http://127.0.0.1:5500/madsonServicos/index.html"; // URL para desktop
+          ? "http://192.168.18.8:5500/index.html" // URL para dispositivos móveis
+          : "http://127.0.0.1:5500/index.html"; // URL para desktop
 
         // REDIRECIONA PARA A PÁGINA INICIAL
         window.location.href = baseURL;
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // FORMULÁRIOS "PERSONAL" E "LOCATION"
   const formPersonal = document.querySelector("#personal form"); // Seleciona o formulário de informações pessoais
   const formLocation = document.querySelector("#location form"); // Seleciona o formulário de endereço
-  const submitButton = document.querySelector('.buttons button[type="submit"]'); // Seleciona o botão de submit
+  const submitButton = document.querySelector('.buttons button'); // Seleciona o botão de submit
 
   if (submitButton) {
     submitButton.addEventListener("click", function (event) {

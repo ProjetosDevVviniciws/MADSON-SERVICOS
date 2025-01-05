@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manutenção Residencial — Tudo que Você Precisa em Momentos de Emergência Está Aqui. Contrate nossos serviços agora mesmo!">
+    <meta name="author" content="Vinícius Pinto Gonçalves">
+    <meta name="keywords" content="manutenção residencial, marido de aluguel, faz tudo, serviços de manutenção, reparos, reformas">
+    <title>MadsonServiços</title>
+    <link rel="stylesheet" href="..//css/finalizarCompra.css">
+    <link rel="icon" href="../assets/images/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="logo">🛠️ MadsonServiços 🏠
+        <h6>Pequenos Consertos, Grandes Resultados</h6>
+    </div>
+    <main>
+        <h1>Seja bem Vindo(a), coloque suas informações abaixo, por favor!</h1>
+        <!-- Novo contêiner para alinhar os formulários lado a lado -->
+        <div class="form-container">
+            <section id="personal">
+                <div class="personalInformation">
+                    <h2>Informações Pessoais</h2>
+                    <form action="#" method="post">
+                        <label for="primeiroNome">Primeiro Nome</label>
+                        <input type="text" placeholder="Primeiro Nome" id="primeiroNome" name="primeiroNome" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+                    
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" placeholder="Sobrenome" id="sobrenome" name="sobrenome" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+                    
+                        <label for="numeroTelefone">Número de telefone</label>
+                        <input type="tel" placeholder="Número de telefone" id="numeroTelefone" name="numeroTelefone" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+                        <p>É necessário um número de telefone válido.</p>
+                        
+
+                        <label for="numeroCpf">Número de CPF</label>
+                        <input type="text" placeholder="CPF" id="numeroCpf" name="numeroCpf" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+                        <p>Preencha um CPF válido que corresponda ao nome.</p>
+                    </form>
+                </div>
+            </section>
+            
+            <section id="location">
+                <div class="locationInformation">
+                    <h2>Informações de Endereço</h2>
+                    <form action="#" method="post">
+                        <label for="cep_codigoPostal">CEP/Código Postal</label>
+                        <input type="text" placeholder="CEP/Código Postal" id="cep_codigoPostal" name="cep_codigoPostal" required pattern="\d{5}-\d{3}" title="Formato: 00000-000">
+                        <span class="error-message">Este campo é obrigatório</span>
+        
+                        <label for="rua">Rua</label>
+                        <input type="text" placeholder="Rua" id="rua" name="rua" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+        
+                        <label for="numero">Número</label>
+                        <input type="text" placeholder="Número" id="numero" name="numero" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+        
+                        <label for="estadoProvincia">Estado/Província</label>
+                        <input type="text" placeholder="Estado/Província" id="estadoProvincia" name="estadoProvincia" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+        
+                        <label for="cidade">Cidade</label>
+                        <input type="text" placeholder="Cidade" id="cidade" name="cidade" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+        
+                        <label for="bairro">Bairro</label>
+                        <input type="text" placeholder="Bairro" id="bairro" name="bairro" required>
+                        <span class="error-message">Este campo é obrigatório</span>
+                    </form>
+                </div>
+            </section>
+        </div> <!-- Fim do form-container -->
+        
+        <!-- Botões -->
+        <div class="buttons">
+            <button class="button">Enviar</button>
+            <a href="../navegation/servicoSelecionados.html" class="button">Voltar</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 MadsonServiços. Todos os direitos reservados.
+    </footer>  
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- jQuery -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Axios -->
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
+        <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,17 +1,18 @@
 // AGUARDA ATÉ QUE O CONTEÚDO DO DOM SEJA TOTALMENTE CARREGADO
 document.addEventListener("DOMContentLoaded", () => {
-  // Verifica se a página foi recarregada (F5 ou botão atualizar)
-  if (performance.navigation.type === 1) {
-    localStorage.removeItem("cartItems"); // Remove os itens do carrinho do localStorage ao recarregar a página
+  // Verifica se a página foi recarregada
+  const navigationEntries = performance.getEntriesByType("navigation");
+  if (navigationEntries.length > 0 && navigationEntries[0].type === "reload") {
+    localStorage.removeItem("cartItems");  // Remove os itens do carrinho do localStorage ao recarregar a página
   }
-
+  
   // Detecta se está em um dispositivo móvel
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   // Define a URL correta com base no dispositivo (móvel ou desktop)
   const baseURL = isMobile
-    ? "http://192.168.18.8:5500/index.html" // URL para dispositivos móveis
-    : "http://127.0.0.1:5500/index.html"; // URL para desktop
+    ? "/index.html" // URL para dispositivos móveis
+    : "/index.html"; // URL para desktop
 
   // VALIDAÇÃO DO FORMULÁRIO DE CONTATO
   const enviarButtonContato = document.querySelector("#contact-form .button");
@@ -53,14 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // SE TODOS OS CAMPOS FOREM VÁLIDOS:
         alert("Mensagem enviada com sucesso! Entraremos em contato em breve."); // Exibe uma mensagem de sucesso
         document.querySelector("#contatar form").reset(); // Limpa os campos do formulário
-
-        // DETECTA SE ESTÁ EM UM DISPOSITIVO MÓVEL
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-        // DEFINE O ENDEREÇO DE REDIRECIONAMENTO BASEADO NO DISPOSITIVO
-        const baseURL = isMobile
-          ? "http://192.168.18.8:5500/index.html" // URL para dispositivos móveis
-          : "http://127.0.0.1:5500/index.html"; // URL para desktop
 
         // REDIRECIONA PARA A PÁGINA INICIAL
         window.location.href = baseURL;

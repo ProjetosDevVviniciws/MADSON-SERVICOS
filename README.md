@@ -4,7 +4,7 @@
 
 O projeto MadsonServiços é um site responsivo, na qual tem um design simples e objetivo.
 
-**Funcionalidades**  **(TODAS AS FUNCIONALIDADES SÃO UM SIMUlAÇÃO)**
+**Funcionalidades**  **(TODAS AS FUNCIONALIDADES SÃO UMA SIMUlAÇÃO)**
 
 * **Página Principal:** Onde o usuário pode explorar todos os serviços disponíveis.
 

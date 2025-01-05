@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define a URL correta com base no dispositivo (móvel ou desktop)
   const baseURL = isMobile
-    ? "/index.html" // URL para dispositivos móveis
-    : "/index.html"; // URL para desktop
+    ? "index.html" // URL para dispositivos móveis
+    : "index.html"; // URL para desktop
 
   // VALIDAÇÃO DO FORMULÁRIO DE CONTATO
   const enviarButtonContato = document.querySelector("#contact-form .button");
